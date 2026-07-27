@@ -1,0 +1,17 @@
+# Entornos
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Datos crudos (2,9 GB): se descargan de Zenodo, ver README.
+# Sin barra final para ignorarlo también si es un enlace simbólico.
+MultiCaReDataset
+pipeline.log
+
+# Artefactos pesados, regenerables con el pipeline (superan el límite de GitHub)
+artifacts/emb_*.npy
+artifacts/cases_index.parquet
+artifacts/images_index.parquet
+
+# Sí se versionan: metrics_*.json, prep_summary.json, eda_stats.json y q_*.npy

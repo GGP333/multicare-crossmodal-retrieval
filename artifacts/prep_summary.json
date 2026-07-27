@@ -1,0 +1,16 @@
+{
+  "n_cases_text": 93816,
+  "n_cases_with_img": 33129,
+  "n_images": 130791,
+  "n_queries_each": 5000,
+  "image_type_dist_queries": {
+    "radiology": 2509,
+    "pathology": 1006,
+    "medical_photograph": 949,
+    "chart": 186,
+    "ophthalmic_imaging": 146,
+    "endoscopy": 128,
+    "electrography": 75
+  },
+  "median_text_len": 2526
+}

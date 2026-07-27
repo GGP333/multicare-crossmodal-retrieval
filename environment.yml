@@ -1,0 +1,32 @@
+# Entorno conda del proyecto.
+#   conda env create -f environment.yml
+#   conda activate multicare-crossmodal
+#
+# Verificado en Linux con GPU NVIDIA RTX 4070 Ti SUPER (16 GB), driver 610.43.02.
+name: multicare-crossmodal
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.14
+  - pip
+  - pip:
+      # Ruedas de PyTorch compiladas contra CUDA 13.0. Para CPU o para otra
+      # versión de CUDA, cambiar el índice según https://pytorch.org/get-started/locally/
+      - --extra-index-url https://download.pytorch.org/whl/cu130
+      - torch==2.12.0
+      - torchvision==0.27.0
+      - open_clip_torch==3.3.0
+      - timm==1.0.27
+      - transformers==4.47.1
+      - huggingface_hub==0.36.2
+      - numpy==2.4.6
+      - pandas==3.0.3
+      - pyarrow==24.0.0
+      - matplotlib==3.10.9
+      - pillow==12.2.0
+      # Para abrir el notebook de demostración
+      - jupyterlab
+      - ipykernel
+      - ipywidgets   # barras de progreso de Hugging Face dentro del notebook

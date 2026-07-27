@@ -1,0 +1,22 @@
+# Alternativa a environment.yml si se prefiere venv:
+#   python -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# torch/torchvision son las ruedas de CUDA 13.0; para CPU u otra versión de CUDA
+# ver https://pytorch.org/get-started/locally/
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+torch==2.12.0
+torchvision==0.27.0
+open_clip_torch==3.3.0
+timm==1.0.27
+transformers==4.47.1
+huggingface_hub==0.36.2
+numpy==2.4.6
+pandas==3.0.3
+pyarrow==24.0.0
+matplotlib==3.10.9
+pillow==12.2.0
+jupyterlab
+ipykernel
+ipywidgets
